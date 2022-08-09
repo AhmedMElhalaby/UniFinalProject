@@ -7,9 +7,9 @@
                     <div class="carousel-item @if($loop->first) active @endif">
                         <div class="row">
                             <div class="col-12 col-md-7 d-flex align-items-center relative">
-                                <div class="outer">
-                                    {{$Advertisement->title}}
-                                </div>
+{{--                                <div class="outer">--}}
+{{--                                    {{$Advertisement->title}}--}}
+{{--                                </div>--}}
                                 <div class="w-100 texts">
                                     <h1>{{$Advertisement->details}}</h1>
                                     <a href="{{$Advertisement->url}}" class="btn sign mt-4">{{__('اضغط هنا')}}</a>
