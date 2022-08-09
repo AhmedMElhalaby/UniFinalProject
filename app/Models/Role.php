@@ -24,4 +24,8 @@ class Role extends Model
     {
         return $this->hasManyThrough(Permission::class,RolePermission::class);
     }
+
+    public function hasPermission($id): bool{
+        return (bool)RolePermission::where('role_id', $this->id)->where('permission_id', $id)->first();
+    }
 }
