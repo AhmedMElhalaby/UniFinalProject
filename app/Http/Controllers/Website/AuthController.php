@@ -28,6 +28,6 @@ class AuthController extends Controller
     }
     public function showLoginForm()
     {
-        return view('website.auth.login');
+        return view('Website.auth.login');
     }
 }
