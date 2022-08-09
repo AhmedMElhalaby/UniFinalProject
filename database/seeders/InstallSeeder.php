@@ -38,11 +38,11 @@ class InstallSeeder extends Seeder
                 'permission_id'=>$permission->id
             ]);
         }
-        Student::factory()->count(20)->create();
-        Lecturer::factory()->count(5)->create();
-        Course::factory()->count(20)->create();
-        Advertisement::factory()->count(3)->create();
-        Article::factory()->count(20)->create();
-        CourseStudent::factory()->count(20)->create();
+//        Student::factory()->count(20)->create();
+//        Lecturer::factory()->count(5)->create();
+//        Course::factory()->count(20)->create();
+//        Advertisement::factory()->count(3)->create();
+//        Article::factory()->count(20)->create();
+//        CourseStudent::factory()->count(20)->create();
     }
 }
