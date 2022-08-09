@@ -125,6 +125,8 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+    'color' => env('APP_COLOR'),
+
     /*
     |--------------------------------------------------------------------------
     | Maintenance Mode Driver
