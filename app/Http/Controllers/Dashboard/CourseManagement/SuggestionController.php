@@ -18,13 +18,15 @@ class SuggestionController extends Controller
         $this->setEntity(CourseSuggestion::class);
         $this->setTable('courses_suggestions');
         $this->setLang('CourseSuggestion');
+        $this->setCreate(false);
         $this->setColumns([
             'student_id'=> [
                 'name'=>'student_id',
                 'type'=>'relation',
                 'relation'=>[
                     'data'=>Student::all(),
-                    'name'=>'name'
+                    'name'=>'name',
+                    'entity'=>'student'
                 ],
                 'is_searchable'=>true,
                 'order'=>true

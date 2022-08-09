@@ -1,6 +1,6 @@
 <?php
 namespace App\Enums;
-enum SettingType: string
+enum SettingType
 {
     case Page = 'page';
     case Constant = 'constant';

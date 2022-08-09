@@ -1,6 +1,6 @@
 <?php
 namespace App\Enums;
-enum Locale: string
+enum Locale
 {
     case Ar = 'ar';
     case En = 'en';

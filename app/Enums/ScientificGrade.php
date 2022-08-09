@@ -1,6 +1,6 @@
 <?php
 namespace App\Enums;
-enum ScientificGrade: string
+enum ScientificGrade
 {
     case Bachelor = 'bachelor';
     case Master = 'master';
