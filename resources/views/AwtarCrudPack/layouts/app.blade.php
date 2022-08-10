@@ -34,7 +34,7 @@
 
     <div class="sidebar" data-color="{{ config('app.color') }}" data-image="">
         <div class="logo" style="text-align: center">
-            <img onclick="window.location ='{{url('dashboard')}}'" src="{{asset('logo.png')}}" width="150" height="35" style="cursor: pointer" alt="">
+            <img onclick="window.location ='{{url('dashboard')}}'" src="{{asset('logo.png')}}" width="200" height="70" style="cursor: pointer" alt="">
 
         </div>
         <div class="sidebar-wrapper">
