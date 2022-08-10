@@ -66,27 +66,23 @@ class LecturerController extends Controller
                 'name'=>'identity_number',
                 'type'=>'text',
                 'is_required'=>true,
-                'is_unique'=>true
             ],
             'address'=> [
                 'name'=>'address',
                 'type'=>'text',
                 'is_required'=>true,
-                'is_unique'=>true
             ],
             'gender'=> [
                 'name'=>'gender',
                 'type'=>'select_enum',
                 'enum'=>Gender::cases(),
                 'is_required'=>true,
-                'is_unique'=>true
             ],
             'scientific_grade'=> [
                 'name'=>'scientific_grade',
                 'type'=>'select_enum',
                 'enum'=>ScientificGrade::cases(),
                 'is_required'=>true,
-                'is_unique'=>true
             ],
             'is_active'=> [
                 'name'=>'is_active',
