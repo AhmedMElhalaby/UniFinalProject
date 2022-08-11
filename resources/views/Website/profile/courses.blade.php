@@ -17,7 +17,7 @@
                         @foreach(auth()->user()->courses() as $Course)
                             <div class="col-4 my-3">
                                 <div class="card" style="border-radius:30px;cursor: pointer" onclick="window.location='{{url('courses/show?course_id='.$Course->id)}}'">
-                                    <img class="card-img-top" src="{{asset($Course->image)}}" style="height: 300px" alt="Card image cap">
+                                    <img class="card-img-top" src="{{asset($Course->image)}}" style="height: 300px;border-top-left-radius:30px;border-top-right-radius:30px;" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">{{$Course->name}}</h5>
                                         <p class="card-text" style="color: gray">{{str($Course->details)->limit(30).' ...'}}</p>
