@@ -18,7 +18,7 @@
                         @foreach($OtherArticles as $Article)
                             <div class="col-12 my-3" style="cursor: pointer" onclick="window.location='{{url('articles/show?article_id='.$Article->id)}}'">
                                 <div class="card" style="border-radius:30px;">
-                                    <img class="card-img-top" src="{{asset($Article->image)}}" alt="Card image cap">
+                                    <img class="card-img-top" src="{{asset($Article->image)}}" style="height: 300px;border-top-left-radius:30px;border-top-right-radius:30px;" alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title">{{$Article->title}}</h5>
                                         <p class="card-text" style="color: gray">{{str($Article->details)->limit(80).' ...'}}</p>
