@@ -67,10 +67,10 @@
             @foreach($Courses as $Course)
                 <div class="col-4 my-3">
                     <div class="card" style="border-radius:30px;">
-                        <img class="card-img-top" src="{{asset($Course->image)}}" alt="Card image cap">
+                        <img class="card-img-top" src="{{asset($Course->image)}}" style="height: 300px" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">{{$Course->name}}</h5>
-                            <p class="card-text" style="color: gray">{{str($Course->details)->limit(50).' ...'}}</p>
+                            <p class="card-text" style="color: gray">{{str($Course->details)->limit(30).' ...'}}</p>
                             <a href="{{url('courses/show?course_id='.$Course->id)}}" class="btn btn-primary">{{__('اشترك الان')}}</a>
                         </div>
                     </div>
