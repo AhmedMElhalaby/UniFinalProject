@@ -3,7 +3,7 @@
     <div class="container-fluid p-5 mt-3" style="min-height: 450px">
         <div class="row">
             <div class="col-9">
-                <img src="{{asset($Article->image)}}" class="img-fluid" style="height: 250px" alt="">
+                <img src="{{asset($Article->image)}}" class="img-fluid" style="height: 350px" alt="">
                 <h1 class="h2 mt-3">{{$Article->title}}</h1>
                 <p class="mt-3 text-wrap">
                     {{$Article->details}}
