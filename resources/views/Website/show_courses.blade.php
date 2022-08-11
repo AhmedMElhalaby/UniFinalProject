@@ -6,7 +6,7 @@
                 <div class="card mb-3">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="{{asset($Course->image)}}" class="card-img" alt="...">
+                            <img src="{{asset($Course->image)}}" style="height: 350px" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
